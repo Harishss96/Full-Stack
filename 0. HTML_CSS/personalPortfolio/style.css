@@ -1,0 +1,178 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Kalam", cursive;
+}
+
+body{
+    background:#fff;
+    padding:20px;
+}
+
+.container{
+    width:900px;
+    margin:auto;
+    border:2px solid #000;
+}
+
+/* Header */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 20px;
+}
+
+.logo{
+    font-weight:bold;
+    font-size:20px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#000;
+}
+
+/* Hero */
+
+.hero{
+    text-align:center;
+    padding:50px 20px;
+    border-bottom:2px solid #000;
+}
+
+.hero h1{
+    font-size:48px;
+}
+
+.hero p{
+    color:gray;
+}
+
+/* Main */
+
+.main{
+    display:grid;
+    grid-template-columns:1fr 1.4fr 1.3fr;
+}
+
+.column,
+.education{
+    border-right:2px solid #000;
+}
+
+.education{
+    border-right:none;
+}
+
+.projects h2,
+.experience h2,
+.education h2{
+    padding:12px;
+}
+
+.projects p{
+    padding:12px;
+    border-top:1px solid #000;
+}
+
+.experience article{
+    padding:12px;
+    border-top:1px solid #000;
+}
+
+.experience a{
+    color:#2b6cff;
+}
+
+.education{
+    padding:12px;
+}
+
+.education ul{
+    margin-top:10px;
+    margin-left:20px;
+}
+
+.education li{
+    margin-bottom:6px;
+}
+
+/* Reviews */
+
+.reviews{
+    border-top:2px solid #000;
+    padding:20px;
+}
+
+.review-container{
+    margin-top:20px;
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.card{
+    width:31%;
+    border:2px solid #000;
+    border-radius:25px;
+    padding:20px;
+}
+
+.card h4{
+    margin-top:20px;
+}
+
+.card small{
+    color:gray;
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    padding:40px;
+}
+
+footer p{
+    font-size:20px;
+}
+
+/* Responsive */
+
+@media (max-width:768px){
+
+.container{
+    width:100%;
+}
+
+header{
+    flex-direction:column;
+    gap:15px;
+}
+
+.main{
+    grid-template-columns:1fr;
+}
+
+.column,
+.education{
+    border-right:none;
+    border-bottom:2px solid #000;
+}
+
+.review-container{
+    flex-direction:column;
+}
+
+.card{
+    width:100%;
+}
+
+.hero h1{
+    font-size:34px;
+}
+
+}
