@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce Checkout</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>Checkout</h1>
+
+        <p>Complete your purchase</p>
+      </header>
+
+      <section class="form">
+        <div class="input-box">
+          <label>Product Name</label>
+          <input type="text" id="productName" />
+        </div>
+
+        <div class="input-box">
+          <label>Price</label>
+          <input type="number" id="price" />
+        </div>
+
+        <div class="input-box">
+          <label>Quantity</label>
+          <input type="number" id="quantity" />
+        </div>
+
+        <div class="input-box">
+          <label>Coupon (%)</label>
+          <input type="number" id="coupon" />
+        </div>
+
+        <div class="input-box">
+          <label>GST (%)</label>
+          <input type="number" id="gst" />
+        </div>
+
+        <div class="buttons">
+          <button id="calculateBtn">Calculate Bill</button>
+
+          <button id="clearBtn">Clear</button>
+        </div>
+      </section>
+
+      <section class="invoice">
+        <h2>Invoice</h2>
+
+        <div class="row">
+          <span>Product</span>
+          <strong id="showProduct">----</strong>
+        </div>
+
+        <div class="row">
+          <span>Subtotal</span>
+          <strong id="showSubtotal">----</strong>
+        </div>
+
+        <div class="row">
+          <span>Discount</span>
+          <strong id="showDiscount">----</strong>
+        </div>
+
+        <div class="row">
+          <span>Delivery</span>
+          <strong id="showDelivery">----</strong>
+        </div>
+
+        <div class="row">
+          <span>GST</span>
+          <strong id="showGST">----</strong>
+        </div>
+
+        <div class="row total">
+          <span>Grand Total</span>
+          <strong id="showTotal">----</strong>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

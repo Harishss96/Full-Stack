@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Authentication Portal</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="login-card">
+        <h1>FlowOS Login</h1>
+
+        <p class="subtitle">Secure Authentication Portal</p>
+
+        <div class="field">
+          <label>Email</label>
+
+          <p id="email"></p>
+        </div>
+
+        <div class="field">
+          <label>Password</label>
+
+          <p id="password"></p>
+        </div>
+
+        <div class="status">
+          <h2>Authentication Status</h2>
+
+          <p id="status">Waiting...</p>
+        </div>
+
+        <div class="details">
+          <div class="row">
+            <span>Email Verified</span>
+
+            <strong id="verified"></strong>
+          </div>
+
+          <div class="row">
+            <span>Subscription</span>
+
+            <strong id="subscription"></strong>
+          </div>
+
+          <div class="row">
+            <span>User Role</span>
+
+            <strong id="role"></strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

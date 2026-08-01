@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Hospital Queue</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>Hospital Patient Queue</h1>
+
+        <p>Manage patient waiting queue.</p>
+      </header>
+
+      <section class="form">
+        <input type="text" id="patientName" placeholder="Patient Name" />
+
+        <input type="number" id="age" placeholder="Age" />
+
+        <input type="text" id="disease" placeholder="Disease" />
+
+        <div class="buttons">
+          <button id="addBtn">Add Patient</button>
+
+          <button id="showBtn">Show Queue</button>
+
+          <button id="nextBtn">Next Patient</button>
+
+          <button id="searchBtn">Search Patient</button>
+
+          <button id="removeBtn">Remove Patient</button>
+
+          <button id="clearBtn">Clear Queue</button>
+        </div>
+      </section>
+
+      <section class="queue">
+        <h2>Patient Queue</h2>
+
+        <div id="patientList">
+          <p>No Patients Waiting</p>
+        </div>
+      </section>
+
+      <section class="stats">
+        <div class="card">
+          <h3>Total Patients</h3>
+
+          <p id="totalPatients">0</p>
+        </div>
+
+        <div class="card">
+          <h3>Next Patient</h3>
+
+          <p id="nextPatient">----</p>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

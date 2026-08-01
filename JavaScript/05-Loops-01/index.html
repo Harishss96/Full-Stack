@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Product Catalog</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>Product Catalog</h1>
+
+        <p>Add product information and generate the catalog.</p>
+      </header>
+
+      <section class="form-section">
+        <div class="input-group">
+          <label>Product Name</label>
+          <input id="productName" type="text" />
+        </div>
+
+        <div class="input-group">
+          <label>Price</label>
+          <input id="price" type="number" />
+        </div>
+
+        <div class="input-group">
+          <label>Category</label>
+          <input id="category" type="text" />
+        </div>
+
+        <div class="input-group">
+          <label>Quantity</label>
+          <input id="quantity" type="number" />
+        </div>
+
+        <div class="button-group">
+          <button id="generateBtn">Generate Catalog</button>
+
+          <button id="resetBtn">Reset Catalog</button>
+        </div>
+      </section>
+
+      <section id="products" class="products"></section>
+    </div>
+  </body>
+</html>

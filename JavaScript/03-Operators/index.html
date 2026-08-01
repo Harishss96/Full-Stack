@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Invoice Dashboard</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <div>
+          <h1>Invoice Summary</h1>
+
+          <p>Operator Practice Dashboard</p>
+        </div>
+
+        <button>Download Invoice</button>
+      </header>
+
+      <section class="invoice">
+        <div class="left">
+          <h2>Product Details</h2>
+
+          <div class="row">
+            <span>Product</span>
+            <strong id="product"></strong>
+          </div>
+
+          <div class="row">
+            <span>Price</span>
+            <strong id="price"></strong>
+          </div>
+
+          <div class="row">
+            <span>Quantity</span>
+            <strong id="quantity"></strong>
+          </div>
+
+          <div class="row">
+            <span>Shipping</span>
+            <strong id="shipping"></strong>
+          </div>
+        </div>
+
+        <div class="right">
+          <h2>Billing Summary</h2>
+
+          <div class="row">
+            <span>Subtotal</span>
+            <strong id="subtotal"></strong>
+          </div>
+
+          <div class="row">
+            <span>Discount</span>
+            <strong id="discount"></strong>
+          </div>
+
+          <div class="row">
+            <span>GST</span>
+            <strong id="gst"></strong>
+          </div>
+
+          <div class="row total">
+            <span>Total</span>
+            <strong id="total"></strong>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

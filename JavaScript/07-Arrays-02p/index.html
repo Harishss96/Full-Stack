@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Attendance Manager</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>Student Attendance Manager</h1>
+
+        <p>Manage daily classroom attendance.</p>
+      </header>
+
+      <section class="form">
+        <div class="input-box">
+          <label>Student Name</label>
+
+          <input type="text" id="studentName" />
+        </div>
+
+        <div class="input-box">
+          <label>Status</label>
+
+          <select id="status">
+            <option value="Present">Present</option>
+
+            <option value="Absent">Absent</option>
+          </select>
+        </div>
+
+        <div class="buttons">
+          <button id="addBtn">Add Student</button>
+
+          <button id="showBtn">Show Attendance</button>
+
+          <button id="summaryBtn">Attendance Summary</button>
+
+          <button id="clearBtn">Clear</button>
+        </div>
+      </section>
+
+      <section class="summary">
+        <h2>Attendance Register</h2>
+
+        <div id="studentList">
+          <p>No Records</p>
+        </div>
+      </section>
+
+      <section class="stats">
+        <div class="card">
+          <h3>Total Students</h3>
+
+          <p id="totalStudents">0</p>
+        </div>
+
+        <div class="card">
+          <h3>Present</h3>
+
+          <p id="presentStudents">0</p>
+        </div>
+
+        <div class="card">
+          <h3>Absent</h3>
+
+          <p id="absentStudents">0</p>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Employee Card Generator</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>Employee Card Generator</h1>
+
+        <p>Create employee cards instantly.</p>
+      </header>
+
+      <section class="form">
+        <div class="input-box">
+          <label>Employee Name</label>
+          <input id="empName" type="text" />
+        </div>
+
+        <div class="input-box">
+          <label>Department</label>
+          <input id="empDapartment" type="text" />
+        </div>
+
+        <div class="input-box">
+          <label>Designation</label>
+          <input id="empDesignation" type="text" />
+        </div>
+
+        <div class="input-box">
+          <label>Salary</label>
+          <input id="empSalary" type="number" />
+        </div>
+
+        <div class="input-box">
+          <label>Number of Cards</label>
+          <input id="count" type="number" />
+        </div>
+
+        <div class="buttons">
+          <button id="generateBtn">Generate Cards</button>
+
+          <button id="resetBtn">Reset</button>
+        </div>
+      </section>
+
+      <section id="cards" class="cards"></section>
+    </div>
+  </body>
+</html>
